@@ -1,0 +1,97 @@
+Input
+{
+  "question": "The maps show the outskirts of the town of Fosbury in 1980 and 2015. Summarise the information by selecting and reporting the main features and make comparisons where relevant.",
+  "url": "https://engnovatewebsitestorage.blob.core.windows.net/ielts-writing-task-1-images/b91b864c7cfa9521",
+  "topic": "Map",
+  "essay": "The given maps indicate the variation of the town of Fosbury’s environs between the years 1980 and 2015. Overall, the area underwent significant changes with a noticeable increase in commercial and recreational development. The most remarkable shift was the construction of major road networks. In 1980, this zone had a main road leading through it from north to south, along with it was tennis courts, fields, block of flats, grocer’s shop and a hotel. Two housing areas could be found in the northwest and northeast, with a park. By 2015, Fosbury had changed with the expansion of commercial facilities. The terraced houses were relocated to where the park once stood to make way for a car park and a supermarket. Moreover, the fields disappeared, and now the southeast features two warehouses. On the other hand, tennis courts and grocer’s shop are were changed and became more advanced by turning into a sports center and supermarket. The existing roads in 1980 had been re-designed with the construction of a roundabout. Unlike the commercial and infrastructure improvements, the houses remain unchanged."
+}
+Output
+{
+  "success": true,
+  "data": {
+    "success": true,
+    "data": {
+      "task": "IELTS_WRITING_TASK_1_GRADING",
+      "overall_band": 6,
+      "evaluation": {
+        "1_task_achievement": {
+          "band_score": 6,
+          "feedback_detail": [
+            "The essay summarizes the main changes in Fosbury's outskirts between 1980 and 2015, mentioning key developments such as the construction of roads, expansion of commercial facilities, and relocation of housing. However, some details are vague or inaccurately described, such as the description of the roads and the specific changes to the tennis courts and grocer’s shop.",
+            "The comparison between the two maps is generally clear, but some points lack clarity or are not explicitly linked to the main features, such as the change in the fields and the new warehouses."
+          ],
+          "strengths": [
+            "Identified main features and significant changes, including infrastructure and land use modifications.",
+            "Made relevant comparisons between the two maps."
+          ],
+          "areas_for_improvement": [
+            "Some details are vague or imprecise, e.g., 'the existing roads in 1980 had been re-designed' without clear explanation of what was re-designed.",
+            "The description of the changes to tennis courts and grocer’s shop could be more specific, e.g., indicating the exact transformation and location."
+          ],
+          "band_reason": "The response covers main features and makes relevant comparisons but lacks detailed accuracy and clarity in some descriptions, limiting a higher score."
+        },
+        "2_coherence_cohesion": {
+          "band_score": 6,
+          "feedback_detail": [
+            "The essay has a logical structure, starting with an overview and then describing specific changes. However, some transitions are abrupt or awkward, such as 'Moreover' and 'On the other hand', which could be better linked.",
+            "The phrase 'Unlike the commercial and infrastructure improvements, the houses remain unchanged' is somewhat vague and could be more clearly connected to the previous sentences."
+          ],
+          "strengths": [
+            "Logical progression of ideas with clear paragraphing.",
+            "Effective use of linking phrases to compare features."
+          ],
+          "areas_for_improvement": [
+            "Some transitions could be smoother, e.g., replacing 'Moreover' with 'Additionally' for better flow.",
+            "Repetition of phrases like 'changed' and 'remained' could be varied to improve cohesion."
+          ],
+          "band_reason": "The overall organization is clear, but some linkages could be more natural, and paragraphing could be improved for better coherence."
+        },
+        "3_lexical_resource": {
+          "band_score": 6,
+          "feedback_detail": [
+            "The vocabulary is appropriate but somewhat limited, e.g., frequent use of 'changed', 'relocated', 'built', 'disappeared'.",
+            "Some phrases are repetitive, such as 'more advanced' and 'made way for', which could be replaced with synonyms or varied expressions."
+          ],
+          "strengths": [
+            "Use of basic descriptive vocabulary related to maps and land use."
+          ],
+          "areas_for_improvement": [
+            "Use a wider range of vocabulary to describe changes, e.g., 'transformed', 'redeveloped', 'replaced', 'expanded'.",
+            "Avoid repetition of common words and phrases to demonstrate lexical resource."
+          ],
+          "band_reason": "Vocabulary is sufficient for task achievement but lacks variety and precision, limiting a higher score."
+        },
+        "4_grammatical_range_accuracy": {
+          "band_score": 5.5,
+          "feedback_detail": [
+            "Some grammatical errors are present, such as 'the tennis courts and grocer’s shop are were changed' (should be 'were changed') and 'the existing roads in 1980 had been re-designed' (which is correct but could be clearer).",
+            "Incorrect prepositions and article use, e.g., 'a main road leading through it from north to south' (correct), but 'the fields disappeared, and now the southeast features two warehouses' (awkward phrasing).",
+            "Some sentences are lengthy and contain minor errors that affect clarity."
+          ],
+          "strengths": [
+            "Use of a variety of sentence structures, including complex sentences."
+          ],
+          "areas_for_improvement": [
+            "Improve grammatical accuracy by correcting subject-verb agreement, e.g., 'tennis courts and grocer’s shop are were changed' should be 'were changed'.",
+            "Reduce grammatical errors in sentence construction and punctuation for clearer expression."
+          ],
+          "band_reason": "The range of sentence structures is adequate but frequent grammatical errors and awkward phrasing reduce overall accuracy."
+        }
+      },
+      "Summary": "The essay provides a clear overview of the main changes in Fosbury’s outskirts, with relevant comparisons and a logical structure. However, inaccuracies in details, some awkward transitions, limited vocabulary, and grammatical errors prevent a higher score. Overall, it demonstrates a competent response suitable for Band 6.0, with room for improvement in precision, variety, and grammatical accuracy.",
+      "Specific Suggestions": [
+        "Enhance accuracy by double-checking details and descriptions of specific features.",
+        "Improve cohesion by using more varied linking phrases and clearer paragraphing.",
+        "Expand vocabulary related to land use and development to avoid repetition.",
+        "Focus on grammatical accuracy, especially subject-verb agreement and sentence structure."
+      ],
+      "Next Steps": [
+        "Practice describing map features with precise details and clear comparisons.",
+        "Learn and practice a wider range of map-related vocabulary.",
+        "Review grammar rules for complex sentences and common errors."
+      ]
+    },
+    "message": "Graded successfully and feedback generated.",
+    "timestamp": "2025-10-29T16:55:10.000000"
+  }
+}
