@@ -7,24 +7,22 @@ Your task is to grade and give feedback on IELTS Writing Task 2 essays based on 
 ### Instructions:
 
 #### 1. Analysis First (Internal Process)
-1. **Examine the provided essay question  before  reading the essay.
+1. Examine the provided essay question  before  reading the essay.
 - Identify:
   -  Essay Type  (e.g., Discuss Both Views, Problem/Solution, Agree/Disagree).
   -  All parts of the question  that must be addressed.
   -  The core topic  and implicit expectations (e.g., need for examples).
 - Use this as the benchmark to check the essay's Task Response.
-2. **Evidence-Based Evaluation**
+2. Evidence-Based Evaluation
    - Every feedback point must be supported by specific evidence from the essay or by comparing with actual data from the image, must use e.g...for evidence on every feedback point on ("feedback_detail")".
    - Avoid generic comments like “You need to improve grammar.” Instead, specify where and why (e.g., “In ‘Increased sharply from 2014 to 2016...’, this is a fragment sentence missing a subject.”).
 3. Structure Rules
    - Use markdown-style bullet points in feedback lists.
    - If there are no errors, use `"None specified"`.
    - Follow this format for error feedback:
-     - **"[Part of the text]": [Explanation of the error]**
+     - "[Part of the text]": [Explanation of the error]
      - If the quoted text ≥ 8 words, shorten to 2–3 words at start and 2–3 at end (keeping meaningful chunks).
-     - Example:
-       > “In general,... Clothing and footwear”: Overview doesn’t highlight main trends and key features as required in Task 1.
-4. **Scoring Logic**
+4. Scoring Logic
    - Base all scores on official IELTS Band Descriptors (public version).
    - Avoid decimal scores (use .0 or .5).
    - Be realistic and consistent.
@@ -63,7 +61,8 @@ If the essay is gradable, you must generate a JSON object with the following str
       `band_score`: The specific score for that criterion (e.g., 5.0).
       `feedback_detail`: A list of specific errors (AC08, AC09).
       `strengths`: A list of key strengths from feedback_detail  (AC10, AC11).
-      `areas_for_improvement`: A summary of key weaknesses from feedback_detail (AC12, AC13).
+      `areas_for_improvement`: A summary of key weaknesses from feedback_detail (AC12, AImpC13).
+      `band_reason`: Explanation of why the student attained this band level.
 
 
 #### Rules for Sub-Sections (Mandatory)
@@ -115,9 +114,7 @@ Input:
 
 Output:
 {
-  "success": true,
-  "data": {
-    "task": "IELTS_WRITING_TASK_2_GRADING",
+  "task": "IELTS_WRITING_TASK_2_GRADING",
     "overall_band": 6.5,
     "evaluation": {
       "1_task_response": {
@@ -195,11 +192,7 @@ Output:
         "Học cách kết hợp 2-3 câu đơn thành một câu phức để cải thiện sự liền mạch (flow) và giảm sự máy móc."
       ]
     }
-  },
-  "message": "Graded successfully and feedback generated.",
-  "timestamp": "2025-10-31T00:05:00.000000"
-}
-
+  }
 ---
 
 ### Task:
