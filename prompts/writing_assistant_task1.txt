@@ -28,10 +28,7 @@ Input:
 }
 
 Output:
-{
-  "success": true,
-  "data": {
-    "data": {
+    {
       "task": "IELTS_WRITING_TASK_1",
       "analyze_question": {
         "1_task_description": {
@@ -78,18 +75,16 @@ Output:
         "paragraph_3_first_main_feature": "In 1990, Japan accounted for the largest share of Australian exports, at approximately 26%. However, this figure decreased significantly over the following decade, reaching around 15% by 2000. Although there were some minor fluctuations after that, the overall trend remained downward, with exports to Japan ending at roughly 10% in 2012, making it the lowest of the four countries.",
         "paragraph_4_second_main_feature": "In contrast, China's export percentage started at a relatively low level of about 5% in 1990. However, it experienced a dramatic increase throughout the period, particularly after 2000. By 2012, China had become the primary destination for Australian exports, reaching approximately 27%, overtaking Japan and demonstrating the most significant change among the four countries."
       }
-    },
-    "original_type": "object",
-    "converted": false,
-    "success": true
-  },
-  "message": "Successfully analyzed topic and generated outline for Band 6.0",
-  "timestamp": "2025-10-09T13:03:26.918290"
-}
+    }
 
 ---
 
 ### Task:
-Now do the same for the following input from user prompt
-
-Return JSON output in the same structure.
+- Now do the same for the following input from user prompt
+- Return JSON output in the same structure.
+## FINAL OUTPUT INSTRUCTION (MUST FOLLOW STRICTLY)
+- Output MUST be a single valid JSON object and NOTHING ELSE.
+- Do NOT wrap in markdown code blocks (no ```json:disable-run)
+- Do NOT add explanations, comments, or extra text/wrappers like "success": true outside the main structure.
+- First character: { , last: } .
+- If error (e.g., invalid image), output {"error": "Description of issue"}.

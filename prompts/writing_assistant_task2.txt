@@ -14,10 +14,7 @@
 
 * **JSON must follow this structure:
 
-{
-  "success": true,
-  "data": {
-    "data": {
+   {
       "task": "IELTS_WRITING_TASK_2",
       "QuestionAnalysis": {
         "TaskDescription": {
@@ -38,16 +35,8 @@
           },
           "BandGuidance": ["..."]
         }
-      },
-      "sample": { ... },
-      "original_type": "object",
-      "converted": false
+      }
     }
-  },
-  "message": "Successfully analyzed topic and generated outline for Band 6.5",
-  "timestamp": "YYYY-MM-DDTHH:mm:ss"
-}
-
 
 2. Analytical Objectives
 
@@ -143,9 +132,7 @@ Input:
 }
 
 Output:
-{
-  "success": true,
-  "data": {
+    {
       "task": "IELTS_WRITING_TASK_2",
       "QuestionAnalysis": {
         "TaskDescription": {
@@ -188,34 +175,34 @@ Output:
         },
         "2_body_1_causes": {
           "topic_sentence": {
-            "content": "Nhu cầu ngày càng tăng đối với công nghệ xanh và sự tập trung vào tăng trưởng kinh tế sau đại dịch là những nguyên nhân chính dẫn đến việc khai thác môi trường ở các nước đang phát triển.",
+            "y_tuong": "Nhu cầu ngày càng tăng đối với công nghệ xanh và sự tập trung vào tăng trưởng kinh tế sau đại dịch là những nguyên nhân chính dẫn đến việc khai thác môi trường ở các nước đang phát triển.",
             "vi_du": "The burgeoning demand for green technologies coupled with the post-pandemic emphasis on economic growth are primary drivers of environmental exploitation in developing countries."
           },
           "supporting_idea_1": {
             "chu_de": "Increased demand for minerals in green technologies",
             "vi_du_cu_the": "The production of electric vehicles (EVs) requires significant amounts of lithium, cobalt, and nickel, leading to increased mining activities in countries like the Democratic Republic of Congo (DRC) and Chile.",
-            "development": "This surge in demand places immense pressure on developing nations to extract these resources rapidly, often at the expense of environmental regulations and community well-being, resulting in deforestation, water pollution, and displacement of local populations."
+            "mo_rong": "This surge in demand places immense pressure on developing nations to extract these resources rapidly, often at the expense of environmental regulations and community well-being, resulting in deforestation, water pollution, and displacement of local populations."
           },
           "supporting_idea_2": {
             "chu_de": "Prioritization of economic recovery over sustainable practices",
             "vi_du_cu_the": "Following the economic downturn caused by the COVID-19 pandemic, many developing countries have relaxed environmental regulations to attract foreign investment and stimulate economic growth, exemplified by increased deforestation for agriculture in the Amazon rainforest.",
-            "development": "This short-sighted approach prioritizes immediate economic gains over long-term environmental sustainability, leading to irreversible damage to ecosystems and exacerbating climate change impacts, ultimately undermining the very foundation of sustainable development."
+            "mo_rong": "This short-sighted approach prioritizes immediate economic gains over long-term environmental sustainability, leading to irreversible damage to ecosystems and exacerbating climate change impacts, ultimately undermining the very foundation of sustainable development."
           }
         },
         "3_body_2_solutions": {
           "topic_sentence": {
-            "content": "Để giải quyết vấn đề này, cần có sự phối hợp giữa chính phủ và các tổ chức quốc tế trong việc thực thi các chính sách bền vững và hỗ trợ các nước đang phát triển.",
+            "y_tuong": "Để giải quyết vấn đề này, cần có sự phối hợp giữa chính phủ và các tổ chức quốc tế trong việc thực thi các chính sách bền vững và hỗ trợ các nước đang phát triển.",
             "vi_du": "Addressing this issue requires concerted efforts from governments and international bodies to enforce sustainable policies and support developing nations in adopting environmentally responsible practices."
           },
           "supporting_idea_1": {
             "chu_de": "Strengthening environmental regulations and enforcement",
             "vi_du_cu_the": "Governments should implement stricter environmental impact assessments (EIAs) for mining projects and enforce penalties for companies that violate environmental regulations, similar to the stricter regulations imposed on mining companies in Canada.",
-            "development": "This would ensure that mining activities are conducted in a more environmentally responsible manner, minimizing deforestation, water pollution, and other negative impacts on local ecosystems and communities. International organizations can provide technical assistance and financial support to help developing countries strengthen their regulatory frameworks."
+            "mo_rong": "This would ensure that mining activities are conducted in a more environmentally responsible manner, minimizing deforestation, water pollution, and other negative impacts on local ecosystems and communities. International organizations can provide technical assistance and financial support to help developing countries strengthen their regulatory frameworks."
           },
           "supporting_idea_2": {
             "chu_de": "Promoting sustainable development and diversification of economies",
             "vi_du_cu_the": "International organizations like the UN Development Programme (UNDP) can support developing countries in diversifying their economies away from resource extraction and towards more sustainable sectors such as renewable energy, ecotourism, and sustainable agriculture, as seen in Costa Rica's successful ecotourism industry.",
-            "development": "This would reduce their dependence on mineral extraction and create more resilient and sustainable economies. Furthermore, promoting technology transfer and capacity building in green technologies can enable developing countries to participate in the green economy without relying on environmentally damaging practices."
+            "mo_rong": "This would reduce their dependence on mineral extraction and create more resilient and sustainable economies. Furthermore, promoting technology transfer and capacity building in green technologies can enable developing countries to participate in the green economy without relying on environmentally damaging practices."
           }
         },
         "4_conclusion": {
@@ -228,19 +215,17 @@ Output:
             "muc_dich": "Final recommendation về giải pháp hoặc quan điểm bền vững liên quan đến: The global demand for green technologies is increasing mineral extraction, causing environmental damage in developing countries. Simultaneously, post-pandemic economic recovery often prioritizes growth over sustainability. What are the primary causes of this environmental exploitation, and what solutions can governments and international bodies implement to address it?",
             "vi_du": "To ensure a sustainable future, governments and international organizations must prioritize environmental protection and support developing nations in adopting environmentally responsible practices, fostering a balance between economic growth and ecological preservation."
       },
-      "original_type": "object",
-      "converted": false
+     }
     }
-  },
-  "message": "Successfully analyzed topic and generated outline for Band 6.5",
-  "timestamp": "2025-10-22T14:29:36.581243"
   }
-}
-
-
 ---
 
 ### Task:
-Now do the same for the following input from user prompt
-
-Return JSON output in the same structure.
+- Now do the same for the following input from user prompt
+- Return JSON output in the same structure.
+## FINAL OUTPUT INSTRUCTION (MUST FOLLOW STRICTLY)
+- Output MUST be a single valid JSON object and NOTHING ELSE.
+- Do NOT wrap in markdown code blocks (no ```json:disable-run)
+- Do NOT add explanations, comments, or extra text/wrappers like "success": true outside the main structure.
+- First character: { , last: } .
+- If error (e.g., invalid image), output {"error": "Description of issue"}.

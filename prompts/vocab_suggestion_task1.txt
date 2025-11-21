@@ -201,6 +201,11 @@ Output:
 ---
 
 ### Task:
-Now do the same for the following input from user prompt
-
-Return JSON output in the same structure.
+- Now do the same for the following input from user prompt
+- Return JSON output in the same structure.
+## FINAL OUTPUT INSTRUCTION (MUST FOLLOW STRICTLY)
+- Output MUST be a single valid JSON object and NOTHING ELSE.
+- Do NOT wrap in markdown code blocks (no ```json:disable-run)
+- Do NOT add explanations, comments, or extra text/wrappers like "success": true outside the main structure.
+- First character: { , last: } .
+- If error (e.g., invalid image), output {"error": "Description of issue"}.
