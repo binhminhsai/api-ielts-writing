@@ -60,12 +60,11 @@ async def writing_assistant_task1(input_data: WritingTask1Input):
     """Tạo nội dung bài viết dựa trên thông tin đầu vào (text + image)."""
     try:
         prompt = build_prompt(input_data.dict(), prompt_name="writing_assistant_task1")
-
         input_json_string = input_data.model_dump_json(indent=2)
         user_prompt_text = (
-            "### Task:\n"
-            "Now do the same for the following input:\n"
-            f"{input_json_string}\n\n"
+            "Task:"
+            "Now do the same for the following input:"
+            f"{input_json_string}"
             "Return JSON output in the same structure."
         )
 
@@ -86,7 +85,7 @@ async def writing_assistant_task1(input_data: WritingTask1Input):
                     ]
                 }
             ],
-            temperature=0.2
+            temperature=0.1
         )
 
         output_text = response.output[0].content[0].text.strip()
@@ -105,15 +104,13 @@ async def vocab_suggestion_task1(input_data: WritingTask1Input):
     """Gợi ý từ vựng nâng cao (advanced vocabulary) dựa trên thông tin đầu vào (question + image + band level)."""
     try:
         prompt = build_prompt(input_data.dict(), prompt_name="vocab_suggestion_task1")
-
         input_json_string = input_data.model_dump_json(indent=2)
         user_prompt_text = (
-            "### Task:\n"
-            "Now do the same for the following input:\n"
-            f"{input_json_string}\n\n"
+            "Task:"
+            "Now do the same for the following input:"
+            f"{input_json_string}"
             "Return JSON output in the same structure."
         )
-
 
         response = client.responses.create(
             model=MODEL_NAME,
@@ -132,7 +129,7 @@ async def vocab_suggestion_task1(input_data: WritingTask1Input):
                     ]
                 }
             ],
-            temperature=0.3,
+            temperature=0.1,
         )
 
         output_text = response.output[0].content[0].text.strip()
@@ -157,9 +154,9 @@ async def grading_feedback_task1(input_data: GradingTask1Input):
 
         input_json_string = input_data.model_dump_json(indent=2)
         user_prompt_text = (
-            "### Task:\n"
-            "Now do the same for the following input:\n"
-            f"{input_json_string}\n\n"
+            "Task:"
+            "Now do the same for the following input:"
+            f"{input_json_string}"
             "Return JSON output in the same structure."
         )
 
@@ -180,7 +177,7 @@ async def grading_feedback_task1(input_data: GradingTask1Input):
                     ]
                 }
             ],
-            temperature=0.3,
+            temperature=0.1,
         )
 
         output_text = response.output[0].content[0].text.strip()
@@ -201,9 +198,9 @@ async def writing_assistant_task2(input_data: WritingTask2Input):
         prompt = build_prompt(input_data.dict(), prompt_name="writing_assistant_task2")
         input_json_string = input_data.model_dump_json(indent=2)
         user_prompt_text = (
-            "### Task:\n"
-            "Now do the same for the following input:\n"
-            f"{input_json_string}\n\n"
+            "Task:"
+            "Now do the same for the following input:"
+            f"{input_json_string}"
             "Return JSON output in the same structure."
         )
 
@@ -223,7 +220,7 @@ async def writing_assistant_task2(input_data: WritingTask2Input):
                     ]
                 }
             ],
-            temperature=0.3,
+            temperature=0.1,
         )
 
         output_text = response.output[0].content[0].text.strip()
@@ -242,6 +239,13 @@ async def vocab_suggestion_task2(input_data: WritingTask2Input):
     """"Gợi ý từ vựng nâng cao (advanced vocabulary) dựa trên thông tin đầu vào (question + band level)."""
     try:
         prompt = build_prompt(input_data.dict(), prompt_name="vocab_suggestion_task2")
+        input_json_string = input_data.model_dump_json(indent=2)
+        user_prompt_text = (
+            "Task:"
+            "Now do the same for the following input:"
+            f"{input_json_string}"
+            "Return JSON output in the same structure."
+        )
 
         response = client.responses.create(
             model=MODEL_NAME,
@@ -249,25 +253,17 @@ async def vocab_suggestion_task2(input_data: WritingTask2Input):
                 {
                     "role": "system",
                     "content": [
-                        {
-                            "type": "input_text",
-                            "text": (
-                                "You are an IELTS Vocabulary assistant. "
-                                "Analyze the given chart from url and suggest academic words and collocations "
-                                "in JSON format only — categories like 'Verbs for Trends', "
-                                "'Nouns for Changes', 'Adjectives/Adverbs for Degree', etc."
-                            ),
-                        }
-                    ],
+                        {"type": "input_text", "text": prompt}
+                    ]
                 },
                 {
                     "role": "user",
                     "content": [
-                        {"type": "input_text", "text": prompt}
-                    ],
-                },
+                        {"type": "input_text", "text": user_prompt_text}
+                    ]
+                }
             ],
-            temperature=0.2,
+            temperature=0.1,
         )
 
         output_text = response.output[0].content[0].text.strip()
@@ -292,9 +288,9 @@ async def grading_feedback_task2(input_data: GradingTask2Input):
 
         input_json_string = input_data.model_dump_json(indent=2)
         user_prompt_text = (
-            "### Task:\n"
-            "Now do the same for the following input:\n"
-            f"{input_json_string}\n\n"
+            "Task:"
+            "Now do the same for the following input:"
+            f"{input_json_string}"
             "Return JSON output in the same structure."
         )
 
@@ -314,7 +310,7 @@ async def grading_feedback_task2(input_data: GradingTask2Input):
                     ]
                 }
             ],
-            temperature=0.3,
+            temperature=0.1,
         )
 
         output_text = response.output[0].content[0].text.strip()

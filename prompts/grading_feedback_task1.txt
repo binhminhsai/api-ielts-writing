@@ -82,13 +82,13 @@ Comparisons (missing or inaccurate).
 Information Selection (personal opinion, too much detail).
 
 - strengths (AC10, AC11)
-Choose the 1-2 most prominent strengths (high band impact or >= 2 occurrences) from `feedback_detail`.  (Sử dụng tiếng Việt)
+Choose the 1-2 most prominent strengths (high band impact or >= 3 occurrences) from `feedback_detail`.  (Sử dụng tiếng Việt)
 Must be relevant to the criterion and not repeated.
 Example: Một số từ vựng chủ đề (e.g., "expenditure", "fluctuated") đã được sử dụng chính xác.
 Rule (Band 9.0): If the score for this criterion is 9.0, the value must be ["None specified"].
 
 - areas_for_improvement (AFI) (AC12, AC13)
-Max 2, Min 0 bullet points.  (Sử dụng tiếng Việt)
+Max 3, Min 0 bullet points.  (Sử dụng tiếng Việt)
 This is a summary of the main issues from feedback_detail.
 Crucial (AC13): You MUST reference the official IELTS Band Descriptor language for that score.
 Example (Band 5 TA): Cấu trúc bài chưa phù hợp. (Tham chiếu: "The format may be inappropriate in places")

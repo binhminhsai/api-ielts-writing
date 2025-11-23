@@ -70,27 +70,27 @@ If the essay is gradable, you must generate a JSON object with the following str
 This is the  raw log  of errors/observations. It is used to write the summary for `areas_for_improvement`.
 
   Max 5 bullet points.
-    Rule 1 (Error in text):   Use the format `  "[Quoted Text]"  : [Explanation]`.
-      The quote MUST be bold (`  `).
-      If quote >= 8 words, shorten it (e.g., `  "In general,... Clothing and footwear"  : ...`), nhưng phải NÊN lấy đầy đủ cụm từ có nghĩa. (AC08)
+    Rule 1 (Error in text):   Use the format  "[Quoted Text]"  : [Explanation].
+      The quote MUST be bold ("  ").
+      If quote >= 8 words, shorten it (e.g., "In general,... Clothing and footwear"  : ...), nhưng phải NÊN lấy đầy đủ cụm từ có nghĩa. (AC08)
     Rule 2 (Missing item):   If the error is  missing  (e.g., no Conclusion, no personal opinion), do NOT use the quote format. Just write the explanation. (AC08)
     >   Example:   Bài viết đang thiếu một phần Conclusion rõ ràng để tóm tắt luận điểm và khẳng định lại quan điểm.
     Rule 3 (Band 9.0):   If the score for this criterion is 9.0, the value must be `["None specified"]`.
     Note for Task Response (Nghiệp vụ Task 2):   Your feedback must cover errors in:
-      Addressing the question (e.g., missing one view, forgetting to give "your opinion").
+      Addressing the question (e.g., missing one view, forgetting to give "your opinion", giải thích lí do bằng tiếng Việt).
       Clarity of position (e.g., quan điểm không rõ ràng, mâu thuẫn).
       Development of ideas (e.g., luận điểm chung chung, không có ví dụ, không giải thích).
       Irrelevant information (e.g., lạc đề, lan man).
 
 ##### `strengths` (AC10, AC11)
-  Max 2 bullet points, Min 1 bullet points.  (Sử dụng tiếng Việt)
+  Max 3 bullet points, Min 1 bullet points.  (Sử dụng tiếng Việt)
   Choose the 1-2  most prominent  strengths (high band impact or >= 2 occurrences) from `feedback_detail`.
   Must be relevant to the criterion and not repeated.
     >   Example:   Các đoạn thân bài được phát triển tốt, mỗi đoạn tập trung vào một ý chính rõ ràng.
     Rule (Band 9.0):   If the score for this criterion is 9.0, the value must be `["None specified"]`.
 
 #### `areas_for_improvement` (AFI) (AC12, AC13)
-  Max 2 bullet points, Min 0 bullet points.  (Sử dụng tiếng Việt)
+  Max 3 bullet points, Min 0 bullet points.  (Sử dụng tiếng Việt)
   This is a  summary  of the main issues from `feedback_detail`.
     Crucial (AC13):   You MUST reference the  official IELTS Band Descriptor language  for that score.
     >   Example (Band 5 TR):   Bài viết không giải quyết đầy đủ các phần của câu hỏi. (Tham chiếu: "does not address all parts of the task")
